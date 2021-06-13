@@ -15,15 +15,16 @@ function toggleMenu() {
     }
 }
 
-// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 
-//     document.write("mobile device");
-//     console.log("mobile");
-// }else{
+    document.write("mobile device");
+    console.log("mobile");
+}else{
 
-//     document.writeln("<div style='position:fixed;width:100%;height:100%;top:150px;left:0px;background-color:black;'><img style='width:50%;margin:0 auto;display:block;' src='ma.jpg'></div>");
-//     window.stop();
-// }
+    // document.writeln("<div style='position:fixed;width:100%;height:100%;top:0px;left:0px;background-color:black;'><img style='width:50%;margin:0 auto;display:block;' src='menu.png'></div>");
+    document.writeln("<style>body{margin:0;}</style><div style='width:100%;height:100%;background-color:black;'><img style='width:60%;margin: auto;display: block;' src='menu.png'></div>");
+    window.stop();
+}
 
 window.onload = function (){
     if (document.getElementById('video2') != undefined){
